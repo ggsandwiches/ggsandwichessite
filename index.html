@@ -1,297 +1,193 @@
 <!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
 
-<html class="no-js" lang="en-US">
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./images/ggbackground.jpg");
+  min-height: 75%;
+}
 
-	<head>
-
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-
-		<link rel="profile" href="https://gmpg.org/xfn/11">
-
-		<title>GG Sandwiches and Salads &#8211; ORDER NOW: 760-409-9873</title>
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="GG Sandwiches and Salads &raquo; Feed" href="http://localhost:8888/mysite/feed/" />
-<link rel="alternate" type="application/rss+xml" title="GG Sandwiches and Salads &raquo; Comments Feed" href="http://localhost:8888/mysite/comments/feed/" />
-		<script>
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost:8888\/mysite\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
-			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style>
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
+.menu {
+  display: none;
 }
 </style>
-	<link rel='stylesheet' id='wp-block-library-css'  href='http://localhost:8888/mysite/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' media='all' />
-<link rel='stylesheet' id='twentytwenty-style-css'  href='http://localhost:8888/mysite/wp-content/themes/twentytwenty/style.css?ver=1.5' media='all' />
-<style id='twentytwenty-style-inline-css'>
-.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #d61347; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #d61347; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #d61347; }.fill-children-accent,.fill-children-accent * { fill: #d61347; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #f5efe0; }:root .has-background-background-color { background-color: #f5efe0; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #69603e; }:root .has-secondary-background-color { background-color: #69603e; }pre,fieldset,input,textarea,table,table *,hr { border-color: #d7cfab; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #d7cfab; }.wp-block-table.is-style-stripes { border-bottom-color: #d7cfab; }.wp-block-latest-posts.is-grid li { border-top-color: #d7cfab; }:root .has-subtle-background-color { color: #d7cfab; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #e41a50; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #e41a50; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #0a0000; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #0a0000; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #ffffff; }body:not(.overlay-header) .primary-menu ul { background-color: #ffffff; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #ffffff; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #ffffff; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #bf3f3f; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #560000; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #560000; }
-</style>
-<link rel='stylesheet' id='twentytwenty-print-style-css'  href='http://localhost:8888/mysite/wp-content/themes/twentytwenty/print.css?ver=1.5' media='print' />
-<script src='http://localhost:8888/mysite/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.5' id='twentytwenty-js-js' async></script>
-<link rel="https://api.w.org/" href="http://localhost:8888/mysite/wp-json/" /><link rel="alternate" type="application/json" href="http://localhost:8888/mysite/wp-json/wp/v2/pages/2" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:8888/mysite/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost:8888/mysite/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 5.5.1" />
-<link rel="canonical" href="http://localhost:8888/mysite/" />
-<link rel='shortlink' href='http://localhost:8888/mysite/' />
-<link rel="alternate" type="application/json+oembed" href="http://localhost:8888/mysite/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A8888%2Fmysite%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://localhost:8888/mysite/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A8888%2Fmysite%2F&#038;format=xml" />
-	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
-	<link rel="icon" href="http://localhost:8888/mysite/wp-content/uploads/2020/09/cropped-GG-SANDWICHES-CARD-3-32x32.png" sizes="32x32" />
-<link rel="icon" href="http://localhost:8888/mysite/wp-content/uploads/2020/09/cropped-GG-SANDWICHES-CARD-3-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="http://localhost:8888/mysite/wp-content/uploads/2020/09/cropped-GG-SANDWICHES-CARD-3-180x180.png" />
-<meta name="msapplication-TileImage" content="http://localhost:8888/mysite/wp-content/uploads/2020/09/cropped-GG-SANDWICHES-CARD-3-270x270.png" />
-
-	</head>
-
-	<body class="home page-template-default page page-id-2 wp-custom-logo wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-no-pagination not-showing-comments show-avatars footer-top-hidden">
-
-		<a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a>
-		<header id="site-header" class="header-footer-group" role="banner">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-			<div class="header-inner section-inner">
-
-				<div class="header-titles-wrapper">
-
-					
-						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-							<span class="toggle-inner">
-								<span class="toggle-icon">
-									<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)" /></svg>								</span>
-								<span class="toggle-text">Search</span>
-							</span>
-						</button><!-- .search-toggle -->
-
-					
-					<div class="header-titles">
-
-						<div class="site-logo faux-heading"><a href="http://localhost:8888/mysite/" class="custom-logo-link" rel="home" aria-current="page"><img width="460" height="345" src="http://localhost:8888/mysite/wp-content/uploads/2020/09/cropped-GG-SANDWICHES-CARD-2.png" class="custom-logo" alt="GG Sandwiches and Salads" srcset="http://localhost:8888/mysite/wp-content/uploads/2020/09/cropped-GG-SANDWICHES-CARD-2.png 460w, http://localhost:8888/mysite/wp-content/uploads/2020/09/cropped-GG-SANDWICHES-CARD-2-300x225.png 300w" sizes="(max-width: 460px) 100vw, 460px" /></a><span class="screen-reader-text">GG Sandwiches and Salads</span></div><div class="site-description">ORDER NOW: 760-409-9873</div><!-- .site-description -->
-					</div><!-- .header-titles -->
-
-					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
-						<span class="toggle-inner">
-							<span class="toggle-icon">
-								<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewBox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)" /></svg>							</span>
-							<span class="toggle-text">Menu</span>
-						</span>
-					</button><!-- .nav-toggle -->
-
-				</div><!-- .header-titles-wrapper -->
-
-				<div class="header-navigation-wrapper">
-
-					
-							<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation">
-
-								<ul class="primary-menu reset-list-style">
-
-								<li class="page_item page-item-2 current_page_item current-menu-item"><a href="http://localhost:8888/mysite/" aria-current="page">G&#038;G Sandwiches and Salads</a></li>
-
-								</ul>
-
-							</nav><!-- .primary-menu-wrapper -->
-
-						
-						<div class="header-toggles hide-no-js">
-
-						
-							<div class="toggle-wrapper search-toggle-wrapper">
-
-								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-									<span class="toggle-inner">
-										<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)" /></svg>										<span class="toggle-text">Search</span>
-									</span>
-								</button><!-- .search-toggle -->
-
-							</div>
-
-							
-						</div><!-- .header-toggles -->
-						
-				</div><!-- .header-navigation-wrapper -->
-
-			</div><!-- .header-inner -->
-
-			<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal">
-
-	<div class="search-modal-inner modal-inner">
-
-		<div class="section-inner">
-
-			<form role="search" aria-label="Search for:" method="get" class="search-form" action="http://localhost:8888/mysite/">
-	<label for="search-form-1">
-		<span class="screen-reader-text">Search for:</span>
-		<input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s" />
-	</label>
-	<input type="submit" class="search-submit" value="Search" />
-</form>
-
-			<button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-				<span class="screen-reader-text">Close search</span>
-				<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102" /></svg>			</button><!-- .search-toggle -->
-
-		</div><!-- .section-inner -->
-
-	</div><!-- .search-modal-inner -->
-
-</div><!-- .menu-modal -->
-
-		</header><!-- #site-header -->
-
-		
-<div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal">
-
-	<div class="menu-modal-inner modal-inner">
-
-		<div class="menu-wrapper section-inner">
-
-			<div class="menu-top">
-
-				<button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
-					<span class="toggle-text">Close Menu</span>
-					<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102" /></svg>				</button><!-- .nav-toggle -->
-
-				
-					<nav class="mobile-menu" aria-label="Mobile" role="navigation">
-
-						<ul class="modal-menu reset-list-style">
-
-						<li class="page_item page-item-2 current_page_item current-menu-item"><div class="ancestor-wrapper"><a href="http://localhost:8888/mysite/" aria-current="page">G&#038;G Sandwiches and Salads</a></div><!-- .ancestor-wrapper --></li>
-
-						</ul>
-
-					</nav>
-
-					
-			</div><!-- .menu-top -->
-
-			<div class="menu-bottom">
-
-				
-			</div><!-- .menu-bottom -->
-
-		</div><!-- .menu-wrapper -->
-
-	</div><!-- .menu-modal-inner -->
-
-</div><!-- .menu-modal -->
-
-<main id="site-content" role="main">
-
-	
-<article class="post-2 page type-page status-publish hentry" id="post-2">
-
-	
-<header class="entry-header has-text-align-center header-footer-group">
-
-	<div class="entry-header-inner section-inner medium">
-
-		<h1 class="entry-title">G&#038;G Sandwiches and Salads</h1>
-	</div><!-- .entry-header-inner -->
-
-</header><!-- .entry-header -->
-
-	<div class="post-inner thin ">
-
-		<div class="entry-content">
-
-			
-<p class="has-text-align-center has-larger-font-size">ORDER NOW: (760)409-9873</p>
-
-
-
-<p>     G&amp;G Sandwiches is dishing up the best panini in the Palm Springs area. They offer both classic and unique panini options that are sure to please your palate. </p>
-
-
-
-<p>     Known for their Philly Cheesesteak, G&amp;G Sandwiches offers plenty of items for every palate to try. The panini are toasted to perfection, the menu features many sandwiches and salads, as well as more popular dishes like Lupe&#8217;s Chicken Special and the Chef Salad. Don&#8217;t wait to try out their new menu item &#8220;Spicy Philly Cheesesteak&#8221;. It is a must try when visiting Palm Springs.</p>
-
-
-
-<blockquote class="wp-block-quote"><p>&#8220;In this world, there are sandwiches we eat and then there are sandwiches we get excited about eating. The latter of those two are almost always grilled &#8212; like panini.&#8221;</p><cite>&#8211; Julie Thomson of The Huffington Post</cite></blockquote>
-
-
-
-<p class="has-text-align-center has-larger-font-size">ORDER NOW: (760)409-9873</p>
-
-
-
-<div class="wp-block-columns">
-<div class="wp-block-column">
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" src="http://localhost:8888/mysite/wp-content/uploads/2020/09/IMG_5847-1024x768.jpg" alt="" class="wp-image-9" srcset="http://localhost:8888/mysite/wp-content/uploads/2020/09/IMG_5847-1024x768.jpg 1024w, http://localhost:8888/mysite/wp-content/uploads/2020/09/IMG_5847-300x225.jpg 300w, http://localhost:8888/mysite/wp-content/uploads/2020/09/IMG_5847-768x576.jpg 768w, http://localhost:8888/mysite/wp-content/uploads/2020/09/IMG_5847-1536x1152.jpg 1536w, http://localhost:8888/mysite/wp-content/uploads/2020/09/IMG_5847-2048x1536.jpg 2048w, http://localhost:8888/mysite/wp-content/uploads/2020/09/IMG_5847-1200x900.jpg 1200w, http://localhost:8888/mysite/wp-content/uploads/2020/09/IMG_5847-1980x1485.jpg 1980w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
 </div>
 
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open 7 days a week</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+	<img src="./images/gglogo.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+	<p><a href ="https://forms.gle/DBuZAnrB46peRm3L8"><button class="w3-button w3-black" type="button">ORDER NOW</button></a></p>
 
+    <span class="w3-text-white" style="font-size:90px" hidden ="true">G&G<br>Sandwiches & Salads</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Desert Hot Springs, Ca</span>
+  </div>
+</header>
 
-<div class="wp-block-column">
-<p>The Philly Cheesesteak from G&amp;G is so good.  You have to try it.</p>
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT G&G SANDWICHES</span></h5>
+    <p>G&G Sandwiches is dishing up the best panini in the Palm Springs area. They offer both classic and unique panini options that are sure to please your palate.</p>
+    <p>Known for their Philly Cheesesteak, G&G Sandwiches offers plenty of items for every palate to try. The panini are toasted to perfection, the menu features many sandwiches and salads, as well as more popular dishes like Lupe’s Chicken Special and the Chef Salad. Don’t wait to try out their new menu item “Spicy Philly Cheesesteak”. It is a must try when visiting Palm Springs.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“In this world, there are sandwiches we eat and then there are sandwiches we get excited about eating. The latter of those two are almost always grilled — like panini.”	</i></p>
+      <p>-Julie Thomson of The Huffington Post</p>
+	</div>
+	<div class="w3-center">
+	<img src="./images/gglogo.png" style="width:50%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> Everyday from 6am to 5pm.</p>
+	<p><strong>Pick-up Location:</strong> Desert Hot Springs</p>
+	<p class="w3-center"><a href ="https://forms.gle/DBuZAnrB46peRm3L8"><button class="w3-button w3-black" type="button">ORDER NOW</button></a></p>
+
+	</div>
+	</div>
+  </div>
 </div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">G&G MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwiches');" id="myLink">
+        <div class="w3-col s6 tablink">Grilled Panini</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');">
+        <div class="w3-col s6 tablink">Salads</div>
+      </a>
+    </div>
+
+    <div id="Sandwiches" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Philly Cheese Steak</h5>
+      <p class="w3-text-grey">slow cooked sirloin, sauteed with mushrooms onion and peppers, melted provolone cheese <br>8.99</p><br>
+    
+      <h5>Lupe's Chicken Special</h5>
+      <p class="w3-text-grey">hot grilled chicken breast, secret sauce, veggies, provolone cheese <br>7.99</p><br>
+    
+      <h5>Turkey Club</h5>
+      <p class="w3-text-grey">organic turkey, bacon, veggies<br>7.99</p><br>
+    
+      <h5>Make Your Own Grilled Panini</h5>
+      <p class="w3-text-grey">turkey, ham, tuna, roast beef, cheese, veggies (lettuce tomato onion), sprouts, avocado<br>6.99 - up</p><br>
+	  <p class="w3-center"><a href ="https://forms.gle/DBuZAnrB46peRm3L8"><button class="w3-button w3-black" type="button">ORDER NOW</button></a></p>
+
+    </div>
+
+    <div id="Salads" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Chef Salad</h5>
+      <p class="w3-text-grey">turkey, ham, roast beef, jack cheese, ranch <br>7.99</p><br>
+    
+      <h5>Cobb Salad</h5>
+      <p class="w3-text-grey">chicken, bacon, avocado, blue cheese, vinegrette 7.99</p><br>
+    
+      <h5>Lupe's Chicken Special Salad</h5>
+      <p class="w3-text-grey">grilled chicken breast <br>7.99</p><br>
+    
+      <h5>Make your own salad</h5>
+      <p class="w3-text-grey">turkey, ham, tuna, roast beef, cheese, veggies (lettuce tomato onion), sprouts, avocado <br>7.99</p><br>
+	  <p class="w3-center"><a href ="https://forms.gle/DBuZAnrB46peRm3L8"><button class="w3-button w3-black" type="button">ORDER NOW</button></a></p>
+
+	</div>  
+	<div class="w3-center">
+	<img src="./images/gglogo.png" style="width:50%;max-width:1000px;margin-top:32px;">
+	<p><a href ="https://forms.gle/DBuZAnrB46peRm3L8"><button class="w3-button w3-black" type="button">ORDER NOW</button></a></p>
+
+	</div>
+
+  </div>
 </div>
 
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+	<p class="w3-center">Serving the greater Palm Springs Area</p>
+	<ul hidden = "true">
+		<li>Desert Hot Springs</li>
+		<li>Palm Springs</li>
+		<li>Cathedral City</li>
+		<li>Thousand Palms</li>
+		<li>Bermuda Dunes</li>
+		<li>Rancho Mirage</li>
+		<li>Palm Desert</li>
+		<li>Indian Wells</li>
+		<li>Indio</li>
+		<li>La Quinta</li>
+	</ul>
+	<div class="w3-center">
+   <img src="./images/ggmap.gif" class="w3-image" alt="Desert Hot Springs, Palm Springs, Cathedral City, Thousand Palms, Rancho Mirage, Palm Desert, Indian Wells, Indio, La Quinta"style="width:70%">
+</div>
+    <p><span class="w3-tag">COOKIES</span> If you order cookies from <a href = "https://www.thebestcookieps.com">THE BEST COOKIE PS</a>, we can deliver your sandwiches and cookies at the same time!</p>
+    <p><strong>Order</strong> your G&G Sandwiches & Salads sandwiches and salads today!</p>
+      <p class="w3-center"><a href ="https://forms.gle/DBuZAnrB46peRm3L8"><button class="w3-button w3-black" type="button">ORDER NOW</button></a></p>
+  </div>
+</div>
 
+<!-- End page content -->
+</div>
 
-<p>Menu coming soon</p>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.remotebb.com" class="w3-hover-text-green">Remote BB LLC</a></p>
+</footer>
 
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
 
-
-<p></p>
-
-		</div><!-- .entry-content -->
-
-	</div><!-- .post-inner -->
-
-	<div class="section-inner">
-		
-	</div><!-- .section-inner -->
-
-	
-</article><!-- .post -->
-
-</main><!-- #site-content -->
-
-
-			<footer id="site-footer" role="contentinfo" class="header-footer-group">
-
-				<div class="section-inner">
-
-					<div class="footer-credits">
-
-						<p class="footer-copyright">&copy;
-							2020							<a href="http://localhost:8888/mysite/">GG Sandwiches and Salads</a>
-						</p><!-- .footer-copyright -->
-
-						<p class="powered-by-wordpress">
-							<a href="https://wordpress.org/">
-								Powered by WordPress							</a>
-						</p><!-- .powered-by-wordpress -->
-
-					</div><!-- .footer-credits -->
-
-					<a class="to-the-top" href="#site-header">
-						<span class="to-the-top-long">
-							To the top <span class="arrow" aria-hidden="true">&uarr;</span>						</span><!-- .to-the-top-long -->
-						<span class="to-the-top-short">
-							Up <span class="arrow" aria-hidden="true">&uarr;</span>						</span><!-- .to-the-top-short -->
-					</a><!-- .to-the-top -->
-
-				</div><!-- .section-inner -->
-
-			</footer><!-- #site-footer -->
-
-		<script src='http://localhost:8888/mysite/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
-	<script>
-	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
-	</script>
-	
-	</body>
+</body>
 </html>
